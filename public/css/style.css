@@ -9,6 +9,11 @@
     font-size: 20px;
   }
 }
+@media (min-width: 728px) {
+  html {
+    font-size: 25px;
+  }
+}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -37,6 +42,16 @@ header .logo {
   width: 20%;
   margin: 0px auto 30px auto;
 }
+@media (min-width: 1280px) {
+  header .logo {
+    width: 15%;
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    padding: 50px;
+  }
+}
 
 .intro__avatar {
   width: 50%;
@@ -50,6 +65,11 @@ header .logo {
     width: 30%;
   }
 }
+@media (min-width: 1280px) {
+  .intro__avatar {
+    width: 25%;
+  }
+}
 .intro__sentences {
   font-size: 1.2rem;
   font-weight: bold;
@@ -57,6 +77,12 @@ header .logo {
 .intro__description {
   font-size: 0.8rem;
   margin: 20px;
+}
+@media (min-width: 1280px) {
+  .intro__description {
+    width: 40%;
+    margin: 20px auto 0px auto;
+  }
 }
 
 .skill {
@@ -76,6 +102,23 @@ header .logo {
 }
 .skill__list .skill__item i {
   font-size: 30px;
+}
+@media (min-width: 1280px) {
+  .skill__list .skill__item i {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  .skill__list {
+    grid-template-columns: repeat(4, 25%);
+    width: 60%;
+    margin: 30px auto 0px auto;
+  }
+}
+@media (min-width: 1280px) {
+  .skill {
+    padding: 50px;
+  }
 }
 
 .work {
@@ -99,7 +142,7 @@ header .logo {
 .work__item__img {
   width: 200px;
   height: 200px;
-  margin-bottom: 20px;
+  margin: 20px 0px;
 }
 .work__item__title {
   font-size: 1em;
@@ -121,6 +164,12 @@ header .logo {
   background: linear-gradient(315deg, #1d2448, #222b56);
   box-shadow: -16px -16px 32px #171d3a, 16px 16px 32px #293366;
   margin-bottom: 20px;
+  font-size: 0.7em;
+}
+@media (min-width: 1280px) {
+  .work__item {
+    width: 50%;
+  }
 }
 
 .blog {
@@ -174,7 +223,12 @@ header .logo {
   border: none;
   cursor: pointer;
   margin-bottom: 20px;
-  font-size: 13px;
+  font-size: 0.7em;
+}
+@media (min-width: 1280px) {
+  .blog__item {
+    width: 50%;
+  }
 }
 
 footer {
@@ -186,6 +240,11 @@ footer .footer__logo {
   width: 20%;
   margin: 0px auto 30px auto;
 }
+@media (min-width: 1280px) {
+  footer .footer__logo {
+    width: 15%;
+  }
+}
 footer .social__list {
   display: flex;
   justify-content: space-evenly;
@@ -193,6 +252,22 @@ footer .social__list {
 footer .social__list .social__item a i {
   color: white;
   font-size: 30px;
+}
+@media (min-width: 1280px) {
+  footer .social__list .social__item a i {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1280px) {
+  footer .social__list .facebook {
+    grid-column: 1/4;
+  }
+}
+@media (min-width: 1280px) {
+  footer .social__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
