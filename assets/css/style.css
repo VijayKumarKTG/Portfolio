@@ -73,6 +73,22 @@ header .logo {
 .intro__sentences {
   font-size: 1.2rem;
   font-weight: bold;
+  overflow: hidden;
+}
+.intro__sentences #sentence {
+  position: relative;
+  animation: downtoup 1.5s linear 2s infinite;
+}
+@keyframes downtoup {
+  0% {
+    bottom: -30px;
+  }
+  50% {
+    bottom: -18px;
+  }
+  100% {
+    bottom: 0px;
+  }
 }
 .intro__description {
   font-size: 0.8rem;
@@ -125,14 +141,77 @@ header .logo {
   padding: 40px 30px;
   color: white;
   background-color: #202850;
+  position: relative;
 }
 .work__heading {
   font-size: 1.1em;
   margin-bottom: 20px;
 }
+.work__list {
+  max-width: 80%;
+  margin: auto;
+  position: relative;
+}
+.work .prev,
+.work .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0px 10px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #1d2448, #222b56);
+  box-shadow: 20px 20px 60px #101427, -20px -20px 60px #303c79;
+}
+.work .prev {
+  left: 10px;
+}
+.work .next {
+  right: 10px;
+}
+.work .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  display: inline-block;
+  transition: color 0.6s ease;
+}
+.work .active,
+.work .dot:hover {
+  color: #717171;
+}
 
+.initial {
+  display: none;
+}
+
+.fade {
+  -webkit-animation: fade 2s;
+  animation: fade 2s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .work__item {
-  width: 80%;
   margin: 30px auto;
   border-radius: 20px;
   background: linear-gradient(145deg, #1d2448, #222b56);

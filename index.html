@@ -22,8 +22,7 @@
         <div class="intro">
             <div class="intro__avatar"><img src="./assets/images/avatar.jpg"
                     alt="Photo of Vijay Kumar sitting under a tree"></div>
-            <h1 class="intro__sentences">I'm <span>
-                    < VijayKumar /></span>
+            <h1 class="intro__sentences">I'm < <span id="sentence">VijayKumar</span> />
             </h1>
             <p class="intro__description">Hello, I'm Vijay, a front-end web developer, resides in Bago, Myanmar. I love
                 to solve daily-life problems with my expertise and skills. I'm fond of exploring new places,
@@ -48,7 +47,7 @@
         <section id="works" class="work">
             <h2 class="work__heading">Some Works I Have Done</h2>
             <ul class="work__list">
-                <li class="work__item">
+                <li class="initial work__item fade">
                     <img src="./assets/images/panadebbie.svg" alt="a man using a digital assitant"
                         class="work__item__img">
                     <h3 class="work__item__title">Debbie ( Open Source )</h3>
@@ -57,7 +56,7 @@
                         pain levels. This is an open source project.</p>
                     <button class="work__item__button">More Info</button>
                 </li>
-                <li class="work__item">
+                <li class="initial work__item fade">
                     <img src="./assets/images/amicocamp.svg"
                         alt="some people are celebrating their campaing in a beautiful forest" class="work__item__img">
                     <h3 class="work__item__title">Yelp Camp</h3>
@@ -65,7 +64,7 @@
                             Developer Bootcamp.</q></p>
                     <button class="work__item__button">More Info</button>
                 </li>
-                <li class="work__item">
+                <li class="initial work__item fade">
                     <img src="./assets/images/brocoding.svg" alt="a man coding on his laptop" class="work__item__img">
                     <h3 class="work__item__title">FreeCodeCamp and Front End Mentor Challenges</h3>
                     <p class="work__item__desc">This 2 platforms allow me to learn, practice and grow with their
@@ -73,6 +72,13 @@
                     <button class="work__item__button">More Info</button>
                 </li>
             </ul>
+            <div class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></div>
+            <div class="next" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"><i class="fas fa-circle"></i></span>
+                <span class="dot" onclick="currentSlide(1)"><i class="fas fa-circle"></i></span>
+                <span class="dot" onclick="currentSlide(2)"><i class="fas fa-circle"></i></span>
+            </div>
         </section>
 
         <section id="blogs" class="blog">
@@ -134,6 +140,7 @@
                     rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
         </ul>
     </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
