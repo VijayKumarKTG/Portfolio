@@ -17,8 +17,8 @@
 
 <body>
     <header id="aboutme">
-        <div class="logo"><img src="./assets/images/logowhite.svg"
-                alt="logo representing the letters VK in angle bracket."></div>
+        <div class="logo"><a href="#" title="Vijay Kumar : Home page"><img src="./assets/images/logowhite.svg"
+                    alt="logo representing the letters VK in angle bracket."></a></div>
         <div class="intro">
             <div class="intro__avatar"><img src="./assets/images/avatar.jpg"
                     alt="Photo of Vijay Kumar sitting under a tree"></div>
@@ -29,6 +29,17 @@
                 photography, reading blogs and books, and developing my skills.</p>
         </div>
     </header>
+    <nav>
+        <ul class="nav__list" id="nav__list">
+            <li class="nav__item"><a href="#aboutme"><i class="fas fa-user"></i></a></li>
+            <li class="nav__item"><a href="#skills"><i class="fas fa-palette"></i></a></li>
+            <li class="nav__item"><a href="#works"><i class="fas fa-laptop-code"></i></a></li>
+            <li class="nav__item"><a href="#blogs"><i class="far fa-newspaper"></i></a></li>
+            <li class="nav__item"><a href="#contacts"><i class="far fa-address-card"></i></a></li>
+            <li class="nav__item"><a href="#aboutme"><i class="fas fa-rocket"></i></a></li>
+        </ul>
+        <div class="hamburger"><span class="animate"><i class="fas fa-bars"></i></span></div>
+    </nav>
     <main>
         <section id="skills" class="skill">
             <h2 class="skill__heading">Skills In My Skills Belt</h2>
@@ -54,7 +65,9 @@
                     <p class="work__item__desc">Debbie is being developed in various form like as an web app, flutter
                         app and react app to help people with chronic pains to monitor their daily, weekly and monthly
                         pain levels. This is an open source project.</p>
-                    <button class="work__item__button">More Info</button>
+                    <a href="./projects.html#debbie" title="Get more info about Debbie project"
+                        class="work__item__button">More
+                        Info</a>
                 </li>
                 <li class="initial work__item fade">
                     <img src="./assets/images/amicocamp.svg"
@@ -62,14 +75,18 @@
                     <h3 class="work__item__title">Yelp Camp</h3>
                     <p class="work__item__desc">This project is developed when I was in Colt Steele's <q>The Web
                             Developer Bootcamp.</q></p>
-                    <button class="work__item__button">More Info</button>
+                    <a href="./projects.html#yelpcamp" title="Get more info about Yelp Camp project"
+                        class="work__item__button">More
+                        Info</a>
                 </li>
                 <li class="initial work__item fade">
                     <img src="./assets/images/brocoding.svg" alt="a man coding on his laptop" class="work__item__img">
                     <h3 class="work__item__title">FreeCodeCamp and Front End Mentor Challenges</h3>
                     <p class="work__item__desc">This 2 platforms allow me to learn, practice and grow with their
                         challenges with different expertise levels.</p>
-                    <button class="work__item__button">More Info</button>
+                    <a href="./projects.html/#challenges" title="Get more info about coding challenges"
+                        class="work__item__button">More
+                        Info</a>
                 </li>
             </ul>
             <div class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></div>
@@ -119,9 +136,9 @@
         </section>
     </main>
 
-    <footer id="contact">
-        <div class="footer__logo"><img src="./assets/images/logowhite.svg"
-                alt="logo representing the letters VK in angle bracket."></div>
+    <footer id="contacts">
+        <div class="footer__logo"><a href="#" title="Vijay Kumar : Home page"><img src="./assets/images/logowhite.svg"
+                    alt="logo representing the letters VK in angle bracket."></a></div>
         <ul class="social__list">
             <li class="social__item"><a href="mailto:vijaykumarktg18@gmail.com" title="Gmail"><i
                         class="fas fa-envelope-open-text"></i></a></li>

@@ -44,7 +44,7 @@ header .logo {
 }
 @media (min-width: 1280px) {
   header .logo {
-    width: 15%;
+    width: 10%;
   }
 }
 @media (min-width: 1280px) {
@@ -62,12 +62,12 @@ header .logo {
 }
 @media (min-width: 728px) {
   .intro__avatar {
-    width: 30%;
+    width: 25%;
   }
 }
 @media (min-width: 1280px) {
   .intro__avatar {
-    width: 25%;
+    width: 20%;
   }
 }
 .intro__sentences {
@@ -101,6 +101,134 @@ header .logo {
   }
 }
 
+nav {
+  position: fixed;
+  z-index: 1;
+  right: 10px;
+  bottom: 10px;
+}
+nav .hamburger {
+  width: 35px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+@media (min-width: 728px) {
+  nav .hamburger {
+    display: none;
+  }
+}
+@media (min-width: 728px) {
+  nav {
+    width: 50%;
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+  }
+  nav:hover {
+    opacity: 1;
+  }
+}
+@media (min-width: 1280px) {
+  nav {
+    width: 30%;
+  }
+}
+
+.nav__list {
+  display: none;
+}
+@media (min-width: 728px) {
+  .nav__list {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    border-radius: 15px;
+  }
+}
+
+.nav-list-style, .disappear, .appear {
+  width: 40px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 0px;
+}
+
+.nav__item a {
+  color: white;
+  cursor: pointer;
+}
+@media (min-width: 728px) {
+  .nav__item {
+    margin: 10px;
+  }
+}
+
+.comein {
+  display: block;
+  animation: translateIn 1s ease;
+}
+
+@keyframes translateIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  70% {
+    opacity: 0.7;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.appear {
+  display: block;
+  animation: appear 1s ease;
+}
+
+.disappear {
+  animation: disappear 1s ease;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+    transform: translateX(50px);
+  }
+  70% {
+    opacity: 0.7;
+    transform: scale(0.5);
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateX(0px);
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  70% {
+    opacity: 0.7;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
 .skill {
   padding: 40px 30px;
   color: #202850;
@@ -167,17 +295,32 @@ header .logo {
   background: linear-gradient(145deg, #1d2448, #222b56);
   box-shadow: 20px 20px 60px #101427, -20px -20px 60px #303c79;
 }
+@media (min-width: 1280px) {
+  .work .prev,
+.work .next {
+    font-size: 30px;
+  }
+}
 .work .prev {
-  left: 10px;
+  left: 5%;
+}
+@media (min-width: 1280px) {
+  .work .prev {
+    padding: 6px 25px 7px 20px;
+  }
 }
 .work .next {
-  right: 10px;
+  right: 5%;
+}
+@media (min-width: 1280px) {
+  .work .next {
+    padding: 7px 20px 6px 25px;
+  }
 }
 .work .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
+  font-size: 15px;
+  margin: 0 10px;
   display: inline-block;
   transition: color 0.6s ease;
 }
@@ -191,8 +334,8 @@ header .logo {
 }
 
 .fade {
-  -webkit-animation: fade 2s;
-  animation: fade 2s;
+  -webkit-animation: fade 3s;
+  animation: fade 3s;
 }
 
 @-webkit-keyframes fade {
@@ -234,12 +377,13 @@ header .logo {
   margin-bottom: 20px;
 }
 .work__item__button {
+  display: inline-block;
   color: white;
   padding: 10px 20px;
   outline: none;
   border: none;
   cursor: pointer;
-  border-radius: 20px;
+  border-radius: 35px;
   background: linear-gradient(315deg, #1d2448, #222b56);
   box-shadow: -16px -16px 32px #171d3a, 16px 16px 32px #293366;
   margin-bottom: 20px;
@@ -270,8 +414,8 @@ header .logo {
   color: #202850;
 }
 .blog__item__img {
-  object-fit: cover;
-  height: 200px;
+  object-fit: fill;
+  height: 150px;
   border-radius: 10px 10px 0px 0px;
   margin-bottom: 20px;
 }
@@ -293,7 +437,7 @@ header .logo {
 }
 .blog__item__button {
   display: inline-block;
-  border-radius: 20px;
+  border-radius: 35px;
   background: linear-gradient(315deg, #e6e6e6, #ffffff);
   box-shadow: -16px -16px 32px #b8b8b8, 16px 16px 32px #ffffff;
   color: #202850;
@@ -321,7 +465,7 @@ footer .footer__logo {
 }
 @media (min-width: 1280px) {
   footer .footer__logo {
-    width: 15%;
+    width: 10%;
   }
 }
 footer .social__list {
@@ -346,6 +490,11 @@ footer .social__list .social__item a i {
   footer .social__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 728px) {
+  footer .social__list {
+    margin-bottom: 40px;
   }
 }
 
