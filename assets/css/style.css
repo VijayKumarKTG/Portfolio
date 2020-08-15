@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  transition: scroll-behavior 1s;
+}
 @media (min-width: 728px) {
   html {
     font-size: 20px;
