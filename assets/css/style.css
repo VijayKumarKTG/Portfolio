@@ -408,9 +408,23 @@ nav .hamburger {
   font-size: 1.1em;
   margin-bottom: 20px;
 }
+.blog__list {
+  display: grid;
+  grid-template-columns: 100%;
+}
+@media (min-width: 728px) {
+  .blog__list {
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+  }
+}
+@media (min-width: 1280px) {
+  .blog__list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .blog__item {
-  width: 80%;
   margin: 30px auto;
   border-radius: 20px;
   background: linear-gradient(145deg, #e6e6e6, #ffffff);
@@ -425,7 +439,12 @@ nav .hamburger {
 }
 @media (min-width: 728px) {
   .blog__item__img {
-    height: 400px;
+    height: 200px;
+  }
+}
+@media (min-width: 728px) {
+  .blog__item__img {
+    height: 200px;
   }
 }
 .blog__item__title {
@@ -452,9 +471,9 @@ nav .hamburger {
   margin-bottom: 20px;
   font-size: 0.7em;
 }
-@media (min-width: 1280px) {
+@media (min-width: 728px) {
   .blog__item {
-    width: 50%;
+    width: 90%;
   }
 }
 

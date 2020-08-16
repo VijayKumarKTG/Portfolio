@@ -1,3 +1,4 @@
+// The implementation of the sentence animation
 let sentences = [
   `VijayKumar`,
   `AFrontEndDeveloper`,
@@ -5,9 +6,7 @@ let sentences = [
   `ANovicePhotographer`,
   `NextSkillIsComingSoon`,
 ];
-
 let i = 0;
-
 const sentence = document.querySelector('#sentence');
 sentence.addEventListener('animationiteration', () => {
   sentence.textContent = sentences[i];
@@ -15,23 +14,20 @@ sentence.addEventListener('animationiteration', () => {
   else i++;
 });
 
+// The implementation of the projects slider
+let slides = document.querySelectorAll('.work__item');
+let dots = document.querySelectorAll('.dot');
 let slideIndex = 0;
-
 const plusSlides = (n) => showSlides((slideIndex += n));
-
 const currentSlide = (n) => showSlides((slideIndex = n));
-
 const showSlides = (n) => {
-  let j;
-  let slides = document.querySelectorAll('.work__item');
-  let dots = document.querySelectorAll('.dot');
-  if (n === slides.length) {
+  if (n >= slides.length) {
     slideIndex = 0;
   }
   if (n < 0) {
     slideIndex = slides.length - 1;
   }
-  for (j = 0; j < slides.length; j++) {
+  for (let j = 0; j < slides.length; j++) {
     slides[j].style.display = 'none';
     dots[j].className = dots[j].className.replace('active', '');
   }
@@ -40,6 +36,17 @@ const showSlides = (n) => {
 };
 
 showSlides(slideIndex);
+
+setInterval(() => {
+  showSlides(slideIndex);
+  if (slideIndex >= slides.length) {
+    slideIndex = 0;
+  } else if (slideIndex < 0) {
+    slideIndex = slides.length - 1;
+  } else {
+    slideIndex++;
+  }
+}, 3000);
 
 let times = `<i class="fas fa-times"></i>`;
 let hamburger = document.querySelector('.hamburger');
@@ -59,7 +66,6 @@ hamburger.addEventListener('click', () => {
   });
   animate.addEventListener('animationend', () => {
     animate.classList = ``;
-    console.log(navList.classList);
     if (navList.classList === 'disappear') navList.classList = 'nav__list';
   });
 });
