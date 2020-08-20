@@ -201,6 +201,20 @@ nav .hamburger {
 .project__container {
   text-align: left;
   margin-bottom: 20px;
+  font-size: 0.7rem;
+}
+.project__container img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: 14px 14px 28px #b8b8b8, -14px -14px 28px #ffffff;
+}
+@media (min-width: 1280px) {
+  .project__container img {
+    max-width: 50%;
+  }
 }
 .project__container .project__heading {
   position: sticky;
