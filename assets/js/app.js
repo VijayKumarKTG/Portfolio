@@ -1,12 +1,12 @@
 // The implementation of the sentence animation
 let sentences = [
   `VijayKumar`,
-  `AFrontEndDeveloper`,
+  `AFullStackDeveloper`,
   `ABookLover`,
   `ANovicePhotographer`,
   `NextSkillIsComingSoon`,
 ];
-let i = 0;
+let i = 1;
 const sentence = document.querySelector('#sentence');
 sentence.addEventListener('animationiteration', () => {
   sentence.textContent = sentences[i];

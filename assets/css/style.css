@@ -56,6 +56,26 @@ header .logo {
     padding: 50px;
   }
 }
+header .animate__sentence {
+  font-size: 1.2rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+header .animate__sentence #sentence {
+  position: relative;
+  animation: downtoup 2s linear 2s infinite;
+}
+@keyframes downtoup {
+  0% {
+    bottom: -30px;
+  }
+  50% {
+    bottom: -18px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
 
 .intro__avatar {
   width: 50%;
@@ -78,21 +98,6 @@ header .logo {
   font-size: 1.2rem;
   font-weight: bold;
   overflow: hidden;
-}
-.intro__sentences #sentence {
-  position: relative;
-  animation: downtoup 1.5s linear 2s infinite;
-}
-@keyframes downtoup {
-  0% {
-    bottom: -30px;
-  }
-  50% {
-    bottom: -18px;
-  }
-  100% {
-    bottom: 0px;
-  }
 }
 .intro__description {
   font-size: 0.8rem;
@@ -248,11 +253,15 @@ nav .hamburger {
   column-gap: 40px;
   justify-content: space-evenly;
 }
-.skill__list .skill__item i {
+.skill__list .skill__item i,
+.skill__list .skill__item img {
   font-size: 30px;
+  width: 40px;
 }
 @media (min-width: 1280px) {
-  .skill__list .skill__item i {
+  .skill__list .skill__item i,
+.skill__list .skill__item img {
+    width: 50px;
     font-size: 40px;
   }
 }
@@ -344,7 +353,7 @@ nav .hamburger {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   to {
     opacity: 1;
@@ -461,8 +470,8 @@ nav .hamburger {
 .blog__item__button {
   display: inline-block;
   border-radius: 35px;
-  background: linear-gradient(315deg, #e6e6e6, #ffffff);
-  box-shadow: -16px -16px 32px #b8b8b8, 16px 16px 32px #ffffff;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 20px 20px 34px #d9d9d9, -20px -20px 34px #ffffff;
   color: #202850;
   padding: 10px 20px;
   outline: none;
