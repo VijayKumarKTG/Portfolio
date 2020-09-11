@@ -347,8 +347,8 @@ nav .hamburger {
 }
 
 .fade {
-  -webkit-animation: fade 3s;
-  animation: fade 3s;
+  -webkit-animation: fade 10s;
+  animation: fade 10s;
 }
 
 @-webkit-keyframes fade {
@@ -361,7 +361,7 @@ nav .hamburger {
 }
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   to {
     opacity: 1;
