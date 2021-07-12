@@ -1,182 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This is Vijay Kumar, a front end developer, and now you are viewing my portfolio website. ">
-    <link rel="shortcut icon" href="./assets/images/logowhite.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is Vijay Kumar, a front end developer, and now you are viewing my portfolio website. "
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logowhite.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Vijay Kumar | Front End Developer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="aboutme">
-        <div class="logo"><a href="#" title="Vijay Kumar : Home page"><img src="./assets/images/logowhite.svg"
-                    alt="logo representing the letters VK in angle bracket."></a></div>
-        <div class="intro">
-            <div class="intro__avatar"><img src="./assets/images/avatar.jpg"
-                    alt="Photo of Vijay Kumar sitting under a tree"></div>
-            <h1 class="intro__sentences">I'm Vijay Kumar!</h1>
-            <p class="intro__description">A fullstack web developer, resides in Bago, Myanmar. I love
-                to solve daily-life problems with my expertise and skills. I'm fond of exploring new places,
-                photography, reading blogs and books, and developing my skills.</p>
-            <div class="animate__sentence">
-                < <span id="sentence">VijayKumar</span> />
-            </div>
+      <div class="logo">
+        <a href="#" title="Vijay Kumar : Home page"
+          ><img
+            src="./assets/images/logowhite.svg"
+            alt="logo representing the letters VK in angle bracket."
+        /></a>
+      </div>
+      <div class="intro">
+        <div class="intro__avatar">
+          <img
+            src="./assets/images/avatar.jpg"
+            alt="Photo of Vijay Kumar sitting under a tree"
+          />
         </div>
+        <h1 class="intro__sentences">I'm Vijay Kumar!</h1>
+        <p class="intro__description">
+          A fullstack web developer, resides in Bago, Myanmar. I love to solve
+          daily-life problems with my expertise and skills. I'm fond of
+          exploring new places, photography, reading blogs and books, and
+          developing my skills.
+        </p>
+        <!-- <div class="animate__sentence">
+          < <span id="sentence">VijayKumar</span> />
+        </div> -->
+      </div>
     </header>
     <nav>
-        <ul class="nav__list" id="nav__list">
-            <li class="nav__item"><a href="#aboutme"><i class="fas fa-user"></i></a></li>
-            <li class="nav__item"><a href="#skills"><i class="fas fa-palette"></i></a></li>
-            <li class="nav__item"><a href="#works"><i class="fas fa-laptop-code"></i></a></li>
-            <li class="nav__item"><a href="#blogs"><i class="far fa-newspaper"></i></a></li>
-            <li class="nav__item"><a href="#contacts"><i class="far fa-address-card"></i></a></li>
-            <li class="nav__item"><a href="#aboutme"><i class="fas fa-rocket"></i></a></li>
-        </ul>
-        <div class="hamburger"><span class="animate"><i class="fas fa-bars"></i></span></div>
+      <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+          <a href="#aboutme"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills"><i class="fas fa-palette"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#works"><i class="fas fa-laptop-code"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#blogs"><i class="far fa-newspaper"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#contacts"><i class="far fa-address-card"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="#aboutme"><i class="fas fa-rocket"></i></a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="animate"><i class="fas fa-bars"></i></span>
+      </div>
     </nav>
     <main>
-        <section id="skills" class="skill">
-            <h2 class="skill__heading">Skills In My Skills Belt</h2>
-            <ul class="skill__list">
-                <li class="skill__item" title="HTML 5"><i class="fab fa-html5"></i></li>
-                <li class="skill__item" title="CSS 3"><i class="fab fa-css3-alt"></i></li>
-                <li class="skill__item" title="JavaScript"><i class="fab fa-js-square"></i></li>
-                <li class="skill__item" title="Bootstrap"><i class="fab fa-bootstrap"></i></li>
-                <li class="skill__item" title="React"><i class="fab fa-react"></i></li>
-                <li class="skill__item" title="Sass"><i class="fab fa-sass"></i></li>
-                <li class="skill__item" title="Git"><i class="fab fa-git-alt"></i></li>
-                <li class="skill__item" title="Github"><i class="fab fa-github-square"></i></li>
-                <li class="skill__item" title="NodeJS"><img src="./assets/images/nodejs.svg" alt="nodejs logo"></li>
-                <li class="skill__item" title="Express">
-                    <p>Express</p>
-                </li>
-                <li class="skill__item" title="MongoDB"><img src="./assets/images/mongodb.svg" alt="mongodb logo"></li>
-                <li class="skill__item" title="MySQL"><img src="./assets/images/mysql.svg" alt="mysql logo"></li>
-            </ul>
-        </section>
+      <section id="skills" class="skill">
+        <h2 class="skill__heading">Skills In My Skills Belt</h2>
+        <ul class="skill__list">
+          <li class="skill__item" title="HTML 5">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="skill__item" title="CSS 3">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="skill__item" title="JavaScript">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <li class="skill__item" title="Bootstrap">
+            <i class="fab fa-bootstrap"></i>
+          </li>
+          <li class="skill__item" title="React">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="skill__item" title="Sass"><i class="fab fa-sass"></i></li>
+          <li class="skill__item" title="Git">
+            <i class="fab fa-git-alt"></i>
+          </li>
+          <li class="skill__item" title="Github">
+            <i class="fab fa-github-square"></i>
+          </li>
+          <li class="skill__item" title="NodeJS">
+            <img src="./assets/images/nodejs.svg" alt="nodejs logo" />
+          </li>
+          <li class="skill__item" title="Express">
+            <p>Express</p>
+          </li>
+          <li class="skill__item" title="MongoDB">
+            <img src="./assets/images/mongodb.svg" alt="mongodb logo" />
+          </li>
+          <li class="skill__item" title="MySQL">
+            <img src="./assets/images/mysql.svg" alt="mysql logo" />
+          </li>
+        </ul>
+      </section>
 
-        <section id="works" class="work">
-            <h2 class="work__heading">Some Works I Have Done</h2>
-            <ul class="work__list">
-                <li class="initial work__item fade">
-                    <img src="./assets/images/cuatetodo.svg" alt="a girl checking her to do list"
-                        class="work__item__img">
-                    <h3 class="work__item__title">Machen: Todo React App</h3>
-                    <p class="work__item__desc">I developed this todo app to improve my react skill after finishing the
-                        book "The Road To React".</p>
-                    <a href="./projects.html#machen" title="Get more info about Debbie project"
-                        class="work__item__button">More
-                        Info</a>
-                </li>
-                <li class="initial work__item fade">
-                    <img src="./assets/images/panadebbie.svg" alt="a man using a digital assitant"
-                        class="work__item__img">
-                    <h3 class="work__item__title">Debbie ( Open Source )</h3>
-                    <p class="work__item__desc">Debbie is being developed in various form like as an web app, flutter
-                        app and react app to help people with chronic pains to monitor their daily, weekly and monthly
-                        pain levels. This is an open source project.</p>
-                    <a href="./projects.html#debbie" title="Get more info about Debbie project"
-                        class="work__item__button">More
-                        Info</a>
-                </li>
-                <li class="initial work__item fade">
-                    <img src="./assets/images/amicocamp.svg"
-                        alt="some people are celebrating their campaing in a beautiful forest" class="work__item__img">
-                    <h3 class="work__item__title">Yelp Camp</h3>
-                    <p class="work__item__desc">This project is developed when I was in Colt Steele's <q>The Web
-                            Developer Bootcamp.</q></p>
-                    <a href="./projects.html#yelpcamp" title="Get more info about Yelp Camp project"
-                        class="work__item__button">More
-                        Info</a>
-                </li>
-                <li class="initial work__item fade">
-                    <img src="./assets/images/brocoding.svg" alt="a man coding on his laptop" class="work__item__img">
-                    <h3 class="work__item__title">FreeCodeCamp and Front End Mentor Challenges</h3>
-                    <p class="work__item__desc">This 2 platforms allow me to learn, practice and grow with their
-                        challenges with different expertise levels.</p>
-                    <a href="./projects.html#challenges" title="Get more info about coding challenges"
-                        class="work__item__button">More
-                        Info</a>
-                </li>
-            </ul>
-            <div class="prev" onclick="plusSlides(-1)"><i class="fas fa-caret-left"></i></div>
-            <div class="next" onclick="plusSlides(1)"><i class="fas fa-caret-right"></i></div>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(0)"><i class="fas fa-circle"></i></span>
-                <span class="dot" onclick="currentSlide(1)"><i class="fas fa-circle"></i></span>
-                <span class="dot" onclick="currentSlide(2)"><i class="fas fa-circle"></i></span>
-                <span class="dot" onclick="currentSlide(3)"><i class="fas fa-circle"></i></span>
-            </div>
-        </section>
-
-        <section id="blogs" class="blog">
-            <h2 class="blog__heading">Some Of My Blogs</h2>
-            <ul class="blog__list">
-                <li class="blog__item">
-                    <img src="./assets/images/async.png"
-                        alt="words like 'Asynchronous Programming, Ajax and Thread' are written in different colors"
-                        class="blog__item__img">
-                    <h3 class="blog__item__title">Asynchronous JavaScript In Details</h3>
-                    <p class="blog__item__desc">So let's see what is asynchronous JavaScript or generally asynchronous
-                        programming. Before we dive into the concept, we shall list the topics we gonna think about.</p>
-                    <a href="https://dev.to/vijaykumarktg18/asynchronous-javascript-in-details-ng9" target="_blank"
-                        rel="noopener noreferrer" class="blog__item__button">More Info</a>
-                </li>
-                <li class="blog__item">
-                    <img src="./assets/images/stack.jpg"
-                        alt="some people are celebrating their campaing in a beautiful forest" class="blog__item__img">
-                    <h3 class="blog__item__title">How does JavaScript engine work?</h3>
-                    <p class="blog__item__desc">Have you ever been heard of execution stack? If your answer is no then
-                        you can follow along with this blog and if yes you can just review about execution context and
-                        execution stack. How does JS engine work? Let's find out the JS working mechanism together. We
-                        will have to find out what are the followings and how they work.</q></p>
-                    <a href="https://dev.to/vijaykumarktg18/how-does-javascript-engine-work-532b" target="_blank"
-                        rel="noopener noreferrer" class="blog__item__button">More Info</a>
-                </li>
-                <li class="blog__item">
-                    <img src="./assets/images/startofnewtech.jpg" alt="a man coding on his laptop"
-                        class="blog__item__img">
-                    <h3 class="blog__item__title">2020, Start of a new tech journey</h3>
-                    <p class="blog__item__desc">More than half of the first month of 2020 has been passed and may be
-                        everyone have already started to learn new things, new startups, new careers and many new
-                        things. May be there will be some people thinking of studying new technology skills.</p>
-                    <a href="https://dev.to/vijaykumarktg18/2020-start-of-a-new-tech-journey-40df" target="_blank"
-                        rel="noopener noreferrer" class="blog__item__button" class="blog__item__button">More Info</a>
-                </li>
-            </ul>
-        </section>
+      <section id="works" class="work">
+        <h2 class="work__heading">Some Works I Have Done</h2>
+        <ul class="work__list">
+          <li class="work__item">
+            <img
+              src="./assets/images/yueco.svg"
+              alt="a girl checking her to do list"
+              class="work__item__img"
+            />
+            <h3 class="work__item__title">YUEco</h3>
+            <p class="work__item__desc">
+              My first freelance project in which I worked with a senior from my
+              university.
+            </p>
+            <a
+              href="./projects.html#yueco"
+              target="_blank"
+              title="Get more info about YUEco project"
+              class="work__item__button"
+              >More Info</a
+            >
+          </li>
+          <li class="work__item">
+            <img
+              src="./assets/images/travel.svg"
+              alt="a girl checking her to do list"
+              class="work__item__img"
+            />
+            <h3 class="work__item__title">The Tarzan Way: Form System</h3>
+            <p class="work__item__desc">
+              I developed a form generating system using ReactJS at my first
+              internship at The Tarzan Way, a travel startup.
+            </p>
+            <a
+              href="./projects.html#tarzan"
+              target="_blank"
+              title="Get more info about the tarzan way form system project"
+              class="work__item__button"
+              >More Info</a
+            >
+          </li>
+          <li class="work__item">
+            <img
+              src="./assets/images/panadebbie.svg"
+              alt="a man using a digital assitant"
+              class="work__item__img"
+            />
+            <h3 class="work__item__title">Debbie ( Open Source )</h3>
+            <p class="work__item__desc">
+              Debbie is being developed in various form like as an web app,
+              flutter app and react app to help people with chronic pains to
+              monitor their daily, weekly and monthly pain levels. This is an
+              open source project.
+            </p>
+            <a
+              href="./projects.html#debbie"
+              target="_blank"
+              title="Get more info about Debbie project"
+              class="work__item__button"
+              >More Info</a
+            >
+          </li>
+          <li class="work__item">
+            <img
+              src="./assets/images/amicocamp.svg"
+              alt="some people are celebrating their campaing in a beautiful forest"
+              class="work__item__img"
+            />
+            <h3 class="work__item__title">Yelp Camp</h3>
+            <p class="work__item__desc">
+              This project is developed when I was in Colt Steele's
+              <q>The Web Developer Bootcamp.</q>
+            </p>
+            <a
+              href="./projects.html#yelpcamp"
+              target="_blank"
+              title="Get more info about Yelp Camp project"
+              class="work__item__button"
+              >More Info</a
+            >
+          </li>
+          <li class="work__item">
+            <img
+              src="./assets/images/brocoding.svg"
+              alt="a man coding on his laptop"
+              class="work__item__img"
+            />
+            <h3 class="work__item__title">
+              FreeCodeCamp and Front End Mentor Challenges
+            </h3>
+            <p class="work__item__desc">
+              This 2 platforms allow me to learn, practice and grow with their
+              challenges with different expertise levels.
+            </p>
+            <a
+              href="./projects.html#challenges"
+              target="_blank"
+              title="Get more info about coding challenges"
+              class="work__item__button"
+              >More Info</a
+            >
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer id="contacts">
-        <div class="footer__logo"><a href="#" title="Vijay Kumar : Home page"><img src="./assets/images/logowhite.svg"
-                    alt="logo representing the letters VK in angle bracket."></a></div>
-        <ul class="social__list">
-            <li class="social__item"><a href="mailto:vijaykumarktg18@gmail.com" title="Gmail"><i
-                        class="fas fa-envelope-open-text"></i></a></li>
-            <li class="social__item"><a href="https://github.com/VijayKumarKTG" target="_blank"
-                    rel="noopener noreferrer" title="Github"><i class="fab fa-github-square"></i></a></li>
-            <li class="social__item"><a href="https://dev.to/vijaykumarktg18" target="_blank" rel="noopener noreferrer"
-                    title="Dev Community"><i class="fab fa-dev"></i></a></li>
-            <li class="social__item"><a href="https://www.linkedin.com/in/vijay-kumar-b74573166/" target="_blank"
-                    rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-            <li class="social__item"><a href="https://twitter.com/vijaykumarktg18" target="_blank"
-                    rel="noopener noreferrer" title="Twitter"><i class="fab fa-twitter-square"></i></a></li>
-            <li class="social__item"><a href="https://www.instagram.com/vijaykumarktg18/" target="_blank"
-                    rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram-square"></i></a></li>
-            <li class="social__item facebook"><a
-                    href="https://web.facebook.com/profile.php?id=100022369323480&ref=bookmarks" target="_blank"
-                    rel="noopener noreferrer" title="Facebook"><i class="fab fa-facebook-square"></i></a></li>
-        </ul>
+      <div class="footer__logo">
+        <a href="#" title="Vijay Kumar : Home page"
+          ><img
+            src="./assets/images/logoblue.svg"
+            alt="logo representing the letters VK in angle bracket."
+        /></a>
+      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="mailto:vijaykumarktg18@gmail.com" title="Gmail"
+            ><i class="fas fa-envelope-open-text"></i
+          ></a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://github.com/VijayKumarKTG"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Github"
+            ><i class="fab fa-github-square"></i
+          ></a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://dev.to/vijaykumarktg18"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Dev Community"
+            ><i class="fab fa-dev"></i
+          ></a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://www.linkedin.com/in/vijay-kumar-b74573166/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="LinkedIn"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://twitter.com/vijaykumarktg18"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Twitter"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+        </li>
+        <li class="social__item">
+          <a
+            href="https://www.instagram.com/vijaykumarktg18/"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Instagram"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+        </li>
+        <!-- <li class="social__item facebook">
+          <a
+            href="https://web.facebook.com/profile.php?id=100022369323480&ref=bookmarks"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Facebook"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+        </li> -->
+      </ul>
     </footer>
     <script src="./assets/js/app.js"></script>
-</body>
-
+  </body>
 </html>

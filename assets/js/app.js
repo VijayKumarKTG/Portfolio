@@ -1,52 +1,41 @@
+'use strict';
 // The implementation of the sentence animation
-let sentences = [
-  `VijayKumar`,
-  `AFullStackDeveloper`,
-  `ABookLover`,
-  `ANovicePhotographer`,
-  `NextSkillIsComingSoon`,
-];
-let i = 1;
-const sentence = document.querySelector('#sentence');
-sentence.addEventListener('animationiteration', () => {
-  sentence.textContent = sentences[i];
-  if (i === 4) i = 0;
-  else i++;
-});
+// let sentences = [
+//   `VijayKumar`,
+//   `AFullStackDeveloper`,
+//   `ABookLover`,
+//   `ANovicePhotographer`,
+//   `NextSkillIsComingSoon`,
+// ];
+// let i = 1;
+// const sentence = document.querySelector('#sentence');
+// sentence.addEventListener('animationiteration', () => {
+//   sentence.textContent = sentences[i];
+//   if (i === 4) i = 0;
+//   else i++;
+// });
 
-// The implementation of the projects slider
-let slides = document.querySelectorAll('.work__item');
-let dots = document.querySelectorAll('.dot');
-let slideIndex = 0;
-const plusSlides = (n) => showSlides((slideIndex += n));
-const currentSlide = (n) => showSlides((slideIndex = n));
-const showSlides = (n) => {
-  if (n >= slides.length) {
-    slideIndex = 0;
-  }
-  if (n < 0) {
-    slideIndex = slides.length - 1;
-  }
-  for (let j = 0; j < slides.length; j++) {
-    slides[j].style.display = 'none';
-    dots[j].className = dots[j].className.replace('active', '');
-  }
-  slides[slideIndex].style.display = 'block';
-  dots[slideIndex].className += ' active';
-};
-
-showSlides(slideIndex);
-
-setInterval(() => {
-  showSlides(slideIndex);
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  } else if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  } else {
-    slideIndex++;
-  }
-}, 3000);
+// The implementation of the slide in of prject cards using intersection observer
+let j = 1;
+let observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (j % 2 == 0) {
+          entry.target.classList.add('slide-in-right');
+        } else {
+          entry.target.classList.add('slide-in-left');
+        }
+        observer.unobserve(entry.target);
+        ++j;
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+let workList = document
+  .querySelectorAll('.work__item')
+  .forEach((entries) => observer.observe(entries));
 
 let times = `<i class="fas fa-times"></i>`;
 let hamburger = document.querySelector('.hamburger');

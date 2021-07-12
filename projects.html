@@ -1,166 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This is Vijay Kumar, a front end developer, and now you are viewing my portfolio website. ">
-    <link rel="shortcut icon" href="./assets/images/logowhite.svg" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/css/projects.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is Vijay Kumar, a front end developer, and now you are viewing my portfolio website. "
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logowhite.svg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
     <title>Projects by Vijay Kumar</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logo">
-            <a href="./index.html" title="Vijay Kumar : Home page"><img src="./assets/images/logowhite.svg"
-                    alt="logo representing the letters VK in angle bracket."></a>
-            <span>Vijay Kumar</span>
-        </div>
+      <div class="logo">
+        <a href="./index.html" title="Vijay Kumar : Home page"
+          ><img
+            src="./assets/images/logowhite.svg"
+            alt="logo representing the letters VK in angle bracket."
+        /></a>
+        <span>Vijay Kumar</span>
+      </div>
     </header>
     <nav>
-        <ul class="nav__list" id="nav__list">
-            <li class="nav__item"><a href="./index.html#aboutme"><i class="fas fa-user"></i></a></li>
-            <li class="nav__item"><a href="./index.html#skills"><i class="fas fa-palette"></i></a></li>
-            <li class="nav__item"><a href="./index.html#works"><i class="fas fa-laptop-code"></i></a></li>
-            <li class="nav__item"><a href="./index.html#blogs"><i class="far fa-newspaper"></i></a></li>
-            <li class="nav__item"><a href="./index.html#contacts"><i class="far fa-address-card"></i></a></li>
-            <li class="nav__item"><a href="#"><i class="fas fa-rocket"></i></a></li>
-        </ul>
-        <div class="hamburger"><span class="animate"><i class="fas fa-bars"></i></span></div>
+      <ul class="nav__list" id="nav__list">
+        <li class="nav__item">
+          <a href="./index.html#aboutme"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html#skills"><i class="fas fa-palette"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html#works"><i class="fas fa-laptop-code"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html#blogs"><i class="far fa-newspaper"></i></a>
+        </li>
+        <li class="nav__item">
+          <a href="./index.html#contacts"
+            ><i class="far fa-address-card"></i
+          ></a>
+        </li>
+        <li class="nav__item">
+          <a href="#"><i class="fas fa-rocket"></i></a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="animate"><i class="fas fa-bars"></i></span>
+      </div>
     </nav>
     <main>
-        <section id="machen" class="project__container">
-            <h2 class="project__heading">Machen</h2>
-            <img src="./assets/images/machen.png" alt="The machen app in a mobile device.">
-            <dl class="project__star">
-                <dt>Situation</dt>
-                <dd>After finishing the reading of the book called "Road To React", I wanted to do some practice to
-                    apply my fresh learnings from that book. So I decided to make a start with a to-do app which most
-                    react beginners do.</dd>
-                <dt>Task</dt>
-                <dd>I wanted to apply my react skills so my focus was mostly to know more about how state and props
-                    work, the controlled components, lifecycle methods and ES6 also. So, the ultimate focus was to
-                    develop a simple to-do app with CRUD, completed to-do and filters.</dd>
-                <dt>Action</dt>
-                <dd>I just started with create-react-app and made a static to-do at first. I did some stylings on the
-                    static to do. Later, I added the data flow with states and props. While developing, did some
-                    debugging using react dev tool and also did snapshot testing and unit testing with Jest.</dd>
-                <dt>Result</dt>
-                <dd>Finally, got the app I wanted but the coding was difficult for me since it was the first react
-                    project with the help of some googling, of course. I learned that my coding is still bad in react;
-                    get some basic knowledge of underlying concepts. Also, become familiar with why testing is important
-                    and why developers do this.</dd>
-            </dl>
-            <div class="project__buttons"><a href="https://machen-todo-react-app-git-master.vijaykumarktg.vercel.app/"
-                    target="_blank" rel="noopener noreferrer" class="live__button">Live
-                    Site</a><a href="https://github.com/VijayKumarKTG/machen-todo-react-app" target="_blank"
-                    rel="noopener noreferrer" class="code__button">Code</a></div>
-        </section>
+      <section id="yueco" class="project__container">
+        <h2 class="project__heading">YUEco</h2>
+        <img
+          src="./assets/images/yuecoimg.png"
+          alt="The YUEco app in a mobile device."
+        />
+        <dl class="project__star">
+          <dt>Situation</dt>
+          <dd>
+            On September 10, 2020, a senior from my university called me to work
+            on a project as a front end developer. The app had back end and I
+            had to complete the front end until the end of the September. So, I
+            accpeted the project.
+          </dd>
+          <dt>Task</dt>
+          <dd>
+            I had to work on fron end using ReactJS, React-Router,
+            styled-components and Axios. I finished the front end on time but
+            later the client wanted to add more features. So, I ended up makng
+            the whole web app 100% customizable from an admin dashboard which
+            client will control. Then, had to created the admin dashboard itself
+            using react-admin. Later, added Facebook Graph API so that users can
+            view organization's Facebook post on the web app. To accomodate all
+            of the above features, I had to make changes in the back end using
+            NodeJS and Express.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            I easily developed the front end but I had to learn how to use
+            react-router for all the routings and axios to make HTTPS requests.
+            I also read about react-admin and wathced some tutorials to make the
+            admin board. There were problems in the react-admin and I had to
+            customise it as users requirements. I developed the admin dashboard
+            by learning, fixing and debugging. I was so frustrated of the
+            react-admin but I made sure I'll do my best and I did created the
+            admin board. After this, I moved to work on setting up facebook
+            developer account for the client web app and integrated it into the
+            app. I had to change some old back-end to meet the new user
+            requirements. Finally, I had to deploy it on Heroku until I relized
+            that I had no experience deploying MERN stack app. So, I learned
+            about it and deployed it successfully.
+          </dd>
+          <dt>Result</dt>
+          <dd>
+            In result, I launched my first cleint MERN stack app. I handovered
+            all of the project related documentations and guides to the client.
+            I learned new technologies and API like React-Router, Axios and
+            Facebook Graph API respectively. I learned about basic MERN stack
+            even without doing any specific course on it. Besides from these, I
+            learned more about how to handle my tasks, frustrations and stress
+            when encounter errors, and how to communicate with respectful
+            straight messages.
+          </dd>
+        </dl>
+        <div class="project__buttons">
+          <a
+            href="http://www.yueco-econclub.com/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live__button"
+            >Live Site</a
+          >
+        </div>
+      </section>
 
-        <section id="debbie" class="project__container">
-            <h2 class="project__heading">Debbie</h2>
-            <dl class="project__star">
-                <dt>Situation</dt>
-                <dd>I was scrolling through the twitter and saw a tweet in which people are invited to participate in an
-                    open-source project called Debbie. This one was my first contribution to an open-source project. I
-                    considered to participate in this “Debbie” project and I just commented down that tweet and later,
-                    got the links to the discord server.</dd>
-                <dt>Task</dt>
-                <dd>All the project members started working on the projects. The leader open issues and made a Kanban
-                    for the project. We were free to work on any issue of our interest. The main focus of this project
-                    was to develop a service which helps people with chronic pain to record their everyday pain level
-                    and shows their records daily, weekly and monthly basis. Currently, the only the web app is
-                    available and later, we have planned to extend the web app and we will develop the app into other
-                    versions like flutter, react, and also will integrate Google Assistant and Alexa.</dd>
-                <dt>Action</dt>
-                <dd>After a couple of days, I started to choose from issues on which I want to contribute. Firstly, I
-                    chose the user story for sign up and landing page. I work with a very nice peer from Spain. Then, I
-                    worked with the designing of sign up page with another colleague from India. Thirdly, I work with
-                    the project initiator on the cleaning up and refactoring of the web app codes. And in finally, I was
-                    assigned to work on the backend issues of the “Debbie” project.</dd>
-                <dt>Result</dt>
-                <dd>We launched the web app version of the "Debbie" project at the end of August. I got a lot more from
-                    doing this project. As I mentioned before, this was my first open-source project, I became familiar
-                    with how to work on a project with many exciting people from around the world. How to communicate
-                    effectively, how to solve an issue with the group, and how to manage time to work on my chores. In
-                    the technical skills, I learned more about HTML, CSS, JavaScript, Git and GitHub, Node.js, NPM,
-                    Express and MongoDB. This is my second work on a full-stack app after the Yelp Camp app. </dd>
-            </dl>
-            <div class="project__buttons"><a href="#" target="_blank" rel="noopener noreferrer"
-                    class="live__button">Live
-                    Site</a><a href="https://github.com/VijayKumarKTG/Web-App-Repo" target="_blank"
-                    rel="noopener noreferrer" class="code__button">Code</a></div>
-        </section>
+      <section id="tarzan" class="project__container">
+        <h2 class="project__heading">The Tarzan Way: Form System</h2>
+        <dl class="project__star">
+          <dt>Situation</dt>
+          <dd>
+            I was looking for online internship and I found a front end
+            internship from a travel startup called The Tarzan Way. This was a
+            young startup from Noida, India. I applied it, cleared the interview
+            and then just dived into the project.
+          </dd>
+          <dt>Task</dt>
+          <dd>
+            I was assigned to create some forms related with different clients
+            and partners using ReactJS. Later my CTO and my senior front end
+            developer told me that I had to create a form system which takes a
+            JSON schema and generates a full-fledged form based on that JSON. It
+            was something new and challenging for me. At first I was nervous
+            about it but later it became exciting to work on that.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            I started creating a static form but with custom react input
+            components. Then, developed a multi-step layout generator for long
+            forms by learning online and some code reviews. I need to make the
+            form to handle inputs, validations, HTTPS requests and responses
+            from the server. At first, I created some components from online
+            codes and refactored the codes using best practices. Later, I
+            started creating all of the components on my own with my logic. I
+            composed all of the components and features into the form system.
+            Then, documented the whole system using "Docz".
+          </dd>
+          <dt>Result</dt>
+          <dd>
+            Created a dynamic form system which takes JSON and generates forms.
+            Those forms handle inputs, validation, error handling and all the
+            accessibility design and best practices. After completing the
+            internship, I got more insights of how to work effectively in an
+            organization, using different tools like Slack, Github and Jira.
+            Learned to believe in myself and in my skills and worked
+            collaboratively in an organization with the organization's vision
+            and mission.
+          </dd>
+        </dl>
+        <div class="project__buttons">
+          <a
+            href="https://www.thetarzanway.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live__button"
+            >Live Site</a
+          >
+        </div>
+      </section>
 
-        <section id="yelpcamp" class="project__container">
-            <h2 class="project__heading">Yelp Camp</h2>
-            <img src="./assets/images/yelpcamp.png" alt="The yelpcamp app on a laptop.">
-            <dl class="project__star">
-                <dt>Situation</dt>
-                <dd>I started learning web development after its introductory story in the first year of the University.
-                    I wanted to know the core concepts of both front end and back end and I found Colt Steele’s “The Web
-                    Developer Bootcamp”. I developed this project during that boot camp on Udemy.</dd>
-                <dt>Task</dt>
-                <dd>We have to develop a full-stack web app on which people can share about a camp they have been with
-                    other people; anyone can comment, add campground info and create their account on the web app and a
-                    lot more.</dd>
-                <dt>Action</dt>
-                <dd>I started coding with the instructor while learning the concepts of full-stack web dev, routing in
-                    express, NodeJS, and MongoDB.</dd>
-                <dt>Result</dt>
-                <dd>At the end of the course, we had a full-stack web app called Yelp Camp. Then, after I got the
-                    certificate from the course, I continued adding new features and some design changes. Now, have the
-                    app with a lot more features.</dd>
-            </dl>
-            <div class="project__buttons"><a href="https://yelpcampmm.herokuapp.com/" target="_blank"
-                    rel="noopener noreferrer" class="live__button">Live
-                    Site</a><a href="#" target="_blank" rel="noopener noreferrer" class="code__button">Code</a></div>
-        </section>
+      <section id="debbie" class="project__container">
+        <h2 class="project__heading">Debbie</h2>
+        <dl class="project__star">
+          <dt>Situation</dt>
+          <dd>
+            I was scrolling through the twitter and saw a tweet in which people
+            are invited to participate in an open-source project called Debbie.
+            This one was my first contribution to an open-source project. I
+            considered to participate in this “Debbie” project and I just
+            commented down that tweet and later, got the links to the discord
+            server.
+          </dd>
+          <dt>Task</dt>
+          <dd>
+            All the project members started working on the projects. The leader
+            open issues and made a Kanban for the project. We were free to work
+            on any issue of our interest. The main focus of this project was to
+            develop a service which helps people with chronic pain to record
+            their everyday pain level and shows their records daily, weekly and
+            monthly basis. Currently, the only the web app is available and
+            later, we have planned to extend the web app and we will develop the
+            app into other versions like flutter, react, and also will integrate
+            Google Assistant and Alexa.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            After a couple of days, I started to choose from issues on which I
+            want to contribute. Firstly, I chose the user story for sign up and
+            landing page. I work with a very nice peer from Spain. Then, I
+            worked with the designing of sign up page with another colleague
+            from India. Thirdly, I work with the project initiator on the
+            cleaning up and refactoring of the web app codes. And in finally, I
+            was assigned to work on the backend issues of the “Debbie” project.
+          </dd>
+          <dt>Result</dt>
+          <dd>
+            We launched the web app version of the "Debbie" project at the end
+            of August. I got a lot more from doing this project. As I mentioned
+            before, this was my first open-source project, I became familiar
+            with how to work on a project with many exciting people from around
+            the world. How to communicate effectively, how to solve an issue
+            with the group, and how to manage time to work on my chores. In the
+            technical skills, I learned more about HTML, CSS, JavaScript, Git
+            and GitHub, Node.js, NPM, Express and MongoDB. This is my second
+            work on a full-stack app after the Yelp Camp app.
+          </dd>
+        </dl>
+        <div class="project__buttons">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live__button"
+            >Live Site</a
+          ><a
+            href="https://github.com/VijayKumarKTG/Web-App-Repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="code__button"
+            >Code</a
+          >
+        </div>
+      </section>
 
-        <section id="challenges" class="project__container">
-            <h2 class="project__heading">Free Code Camp & Front End Mentor</h2>
-            <img src="./assets/images/fcc.png" alt="The yelpcamp app on a laptop.">
-            <dl class="project__star">
-                <dt>Situation</dt>
-                <dd>I have been doing Free Code Camp challenges for 1 and half year. I wanted to practices related to
-                    full-stack web development. So I found this platform before any other platforms. In the case of
-                    front-end mentor, I use this platform to develop my designing, HTML, CSS and some basic JavaScript
-                    skills.</dd>
-                <dt>Task</dt>
-                <dd>What I have to do in the FCC is to work on a certain number of challenges in each section. After
-                    completing those challenges, I have to complete at least 5 small real-world projects. Then, after
-                    completing all the challenges and projects in a section, I'll get a certificate for free. Where
-                    front-end mentor provides me with a simple template and assets like images and design of a certain
-                    challenge. I have to accomplish the design with any front-end related technology.</dd>
-                <dt>Action</dt>
-                <dd>I began working on these challenges one-by-one and got my certificates. I'm still doing FCC and
-                    front-end mentor challenges. Do google search on some challenges and do some more research to get
-                    more insight into the challenge concepts.</dd>
-                <dt>Result</dt>
-                <dd>Finally, I now have 5 certificates from the FCC and completed 11 challenges from front-end
-                    mentor. I got a lot more knowledge and become used to with slack because of front-end mentor slack
-                    group. I started getting help and helping others in the slack group.</dd>
-            </dl>
-            <div class="project__buttons"><a href="https://www.freecodecamp.org/vijaykumarktg" target="_blank"
-                    rel="noopener noreferrer" class="live__button">FCC</a><a
-                    href="https://www.frontendmentor.io/profile/VijayKumarKTG" target="_blank" rel="noopener noreferrer"
-                    class="code__button">Front End
-                    Mentor</a></div>
-        </section>
+      <section id="yelpcamp" class="project__container">
+        <h2 class="project__heading">Yelp Camp</h2>
+        <img
+          src="./assets/images/yelpcamp.png"
+          alt="The yelpcamp app on a laptop."
+        />
+        <dl class="project__star">
+          <dt>Situation</dt>
+          <dd>
+            I started learning web development after an introductory course in
+            the first year of the University. I wanted to learn the core
+            concepts of both front end and back end development. I found Colt
+            Steele’s “The Web Developer Bootcamp”. Whilst working through his
+            course I developed this project.
+          </dd>
+          <dt>Task</dt>
+          <dd>
+            This was a project to develop a full-stack web app on which people
+            can share about a camp they have been with other people. Anyone can
+            comment, add campground info and create their account on the web app
+            and a lot more.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            I started coding together with an instructor while learning the
+            concepts of full-stack web dev, routing in express, NodeJS, and
+            MongoDB.
+          </dd>
+          <dt>Result</dt>
+          <dd>
+            At the end of the course, I had a full-stack web app called Yelp
+            Camp. Then, following my certificate from the course, I continued
+            adding new features and some design changes. I have since completing
+            this added a lot of new features.
+          </dd>
+        </dl>
+        <div class="project__buttons">
+          <a
+            href="https://yelpcampmm.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live__button"
+            >Live Site</a
+          >
+        </div>
+      </section>
+
+      <section id="challenges" class="project__container">
+        <h2 class="project__heading">Free Code Camp & Front End Mentor</h2>
+        <img
+          src="./assets/images/fcc.png"
+          alt="The yelpcamp app on a laptop."
+        />
+        <dl class="project__star">
+          <dt>Situation</dt>
+          <dd>
+            I have been working through Free Code Camp challenges for one and a
+            half years. I wanted to practice my full-stack web development. In
+            addition to this, I have also worked on projects from front-end
+            mentor, I use this platform to develop my design, HTML, CSS and some
+            basic JavaScript skills.
+          </dd>
+          <dt>Task</dt>
+          <dd>
+            In the FCC my focus is to work on a certain number of challenges in
+            each section. After completing those challenges, I complete at least
+            5 small real-world projects. I have found it invaluable that
+            front-end mentor provides me with a simple template and assets like
+            images and design of a certain challenge. I have to accomplish the
+            design with any front-end related framework I consider suitable.
+          </dd>
+          <dt>Action</dt>
+          <dd>
+            I began working on these challenges one-by-one and completed all my
+            certificates. I'm still doing FCC and front-end mentor challenges.
+            As all developers do, I often research challenges to get more
+            insight into the challenge concepts.
+          </dd>
+          <dt>Result</dt>
+          <dd>
+            Finally, I now have 5 certificates from the FCC and completed 11
+            challenges from front-end mentor. I have gained a lot of knowledge
+            and also become familiar with tools like slack and github because of
+            front-end mentor slack group. I have collaborated with other
+            students to deliver these projects as well as continue by
+            contributing to open source projects.
+          </dd>
+        </dl>
+        <div class="project__buttons">
+          <a
+            href="https://www.freecodecamp.org/vijaykumarktg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="live__button"
+            >FCC</a
+          ><a
+            href="https://www.frontendmentor.io/profile/VijayKumarKTG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="code__button"
+            >Front End Mentor</a
+          >
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer__logo"><a href="./index.html" title="Vijay Kumar : Home page"><img
-                    src="./assets/images/logowhite.svg" alt="logo representing the letters VK in angle bracket."></a>
-        </div>
+      <div class="footer__logo">
+        <a href="./index.html" title="Vijay Kumar : Home page"
+          ><img
+            src="./assets/images/logowhite.svg"
+            alt="logo representing the letters VK in angle bracket."
+        /></a>
+      </div>
     </footer>
     <script src="./assets/js/projects.js"></script>
-</body>
-
+  </body>
 </html>

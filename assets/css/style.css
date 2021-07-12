@@ -43,7 +43,7 @@ header {
   background-color: #202850;
 }
 header .logo {
-  width: 20%;
+  width: 90px;
   margin: 0px auto 30px auto;
 }
 @media (min-width: 1280px) {
@@ -56,29 +56,9 @@ header .logo {
     padding: 50px;
   }
 }
-header .animate__sentence {
-  font-size: 1.2rem;
-  font-weight: bold;
-  overflow: hidden;
-}
-header .animate__sentence #sentence {
-  position: relative;
-  animation: downtoup 2s linear 2s infinite;
-}
-@keyframes downtoup {
-  0% {
-    bottom: -30px;
-  }
-  50% {
-    bottom: -18px;
-  }
-  100% {
-    bottom: 0px;
-  }
-}
 
 .intro__avatar {
-  width: 50%;
+  width: 130px;
   margin: 0px auto 15px auto;
 }
 .intro__avatar img {
@@ -86,26 +66,38 @@ header .animate__sentence #sentence {
 }
 @media (min-width: 728px) {
   .intro__avatar {
-    width: 25%;
+    width: 20%;
   }
 }
 @media (min-width: 1280px) {
   .intro__avatar {
-    width: 20%;
+    width: 15%;
   }
 }
 .intro__sentences {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.3rem;
+  font-weight: 700;
   overflow: hidden;
 }
+@media (min-width: 728px) {
+  .intro__sentences {
+    font-size: 1.2rem;
+  }
+}
 .intro__description {
-  font-size: 0.8rem;
-  margin: 20px;
+  font-size: 1rem;
+  margin: 20px 0px;
+  letter-spacing: 1px;
+}
+@media (min-width: 728px) {
+  .intro__description {
+    font-size: 0.8rem;
+    margin: 20px;
+  }
 }
 @media (min-width: 1280px) {
   .intro__description {
-    width: 40%;
+    width: 70%;
     margin: 20px auto 0px auto;
   }
 }
@@ -289,90 +281,29 @@ nav .hamburger {
   margin-bottom: 20px;
 }
 .work__list {
-  max-width: 80%;
-  margin: auto;
+  width: 100%;
   position: relative;
 }
-.work .prev,
-.work .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 0px 10px;
-  transition: 0.6s ease;
-  border-radius: 50%;
-  background: linear-gradient(145deg, #1d2448, #222b56);
-  box-shadow: 20px 20px 60px #101427, -20px -20px 60px #303c79;
+@media (min-width: 728px) {
+  .work__list {
+    max-width: 80%;
+    margin: auto;
+  }
 }
 @media (min-width: 1280px) {
-  .work .prev,
-.work .next {
-    font-size: 30px;
+  .work__list {
+    max-width: 80%;
   }
-}
-.work .prev {
-  left: 5%;
-}
-@media (min-width: 1280px) {
-  .work .prev {
-    padding: 6px 25px 7px 20px;
-  }
-}
-.work .next {
-  right: 5%;
-}
-@media (min-width: 1280px) {
-  .work .next {
-    padding: 7px 20px 6px 25px;
-  }
-}
-.work .dot {
-  cursor: pointer;
-  font-size: 15px;
-  margin: 0 10px;
-  display: inline-block;
-  transition: color 0.6s ease;
-}
-.work .active,
-.work .dot:hover {
-  color: #717171;
 }
 
-.initial {
-  display: none;
-}
-
-.fade {
-  -webkit-animation: fade 10s;
-  animation: fade 10s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes fade {
-  from {
-    opacity: 0.6;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .work__item {
   margin: 30px auto;
   border-radius: 20px;
   background: linear-gradient(145deg, #1d2448, #222b56);
   box-shadow: 16px 16px 32px #161c38, -16px -16px 32px #2a3468;
   color: white;
+  padding: 20px;
+  opacity: 0;
 }
 .work__item__img {
   width: 200px;
@@ -380,14 +311,19 @@ nav .hamburger {
   margin: 20px 0px;
 }
 .work__item__title {
-  font-size: 1em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
 .work__item__desc {
-  font-size: 0.7em;
-  font-weight: 600;
-  padding: 0px 30px;
+  font-weight: 400;
   margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+@media (min-width: 728px) {
+  .work__item__desc {
+    font-size: 0.8rem;
+    padding: 0px 20px;
+  }
 }
 .work__item__button {
   display: inline-block;
@@ -400,99 +336,114 @@ nav .hamburger {
   background: linear-gradient(315deg, #1d2448, #222b56);
   box-shadow: -16px -16px 32px #171d3a, 16px 16px 32px #293366;
   margin-bottom: 20px;
-  font-size: 0.7em;
+  font-size: 0.9em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 500ms ease;
+}
+.work__item__button:hover {
+  background: white;
+  color: #202850;
+}
+@media (min-width: 728px) {
+  .work__item__button {
+    font-size: 0.8em;
+    font-weight: 500;
+  }
 }
 @media (min-width: 1280px) {
   .work__item {
-    width: 50%;
+    width: 80%;
   }
 }
 
-.blog {
-  padding: 40px 30px;
-  color: #202850;
-  background-color: white;
-}
-.blog__heading {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-.blog__list {
-  display: grid;
-  grid-template-columns: 100%;
-}
-@media (min-width: 728px) {
-  .blog__list {
-    grid-template-columns: 50% 50%;
-    column-gap: 20px;
-  }
-}
-@media (min-width: 1280px) {
-  .blog__list {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+.slide-in-right {
+  -webkit-animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.blog__item {
-  margin: 30px auto;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 16px 16px 32px #b3b3b3, -16px -16px 32px #ffffff;
-  color: #202850;
-}
-.blog__item__img {
-  object-fit: fill;
-  height: 150px;
-  border-radius: 10px 10px 0px 0px;
-  margin-bottom: 20px;
-}
-@media (min-width: 728px) {
-  .blog__item__img {
-    height: 200px;
+/* ----------------------------------------------
+ * Generated by Animista on 2021-7-11 15:9:43
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
-@media (min-width: 728px) {
-  .blog__item__img {
-    height: 200px;
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
   }
 }
-.blog__item__title {
-  font-size: 1em;
-  padding: 0px 30px;
-  margin-bottom: 20px;
-}
-.blog__item__desc {
-  font-size: 0.7em;
-  font-weight: 600;
-  padding: 0px 30px;
-  margin-bottom: 20px;
-}
-.blog__item__button {
-  display: inline-block;
-  border-radius: 35px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
-  box-shadow: 20px 20px 34px #d9d9d9, -20px -20px 34px #ffffff;
-  color: #202850;
-  padding: 10px 20px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 0.7em;
-}
-@media (min-width: 728px) {
-  .blog__item {
-    width: 90%;
-  }
+.slide-in-left {
+  -webkit-animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+/* ----------------------------------------------
+ * Generated by Animista on 2021-7-11 15:12:35
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+/**
+ * ----------------------------------------
+ * animation slide-in-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 footer {
   padding: 30px 20px;
-  background-color: #202850;
-  color: white;
+  background-color: white;
+  color: #202850;
 }
 footer .footer__logo {
-  width: 20%;
+  width: 90px;
   margin: 0px auto 30px auto;
 }
 @media (min-width: 1280px) {
@@ -505,13 +456,22 @@ footer .social__list {
   justify-content: space-evenly;
 }
 footer .social__list .social__item a i {
-  color: white;
+  color: #202850;
   font-size: 30px;
+  transition: transform 500ms ease;
+}
+@media (min-width: 728px) {
+  footer .social__list .social__item a i {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 1280px) {
   footer .social__list .social__item a i {
     font-size: 40px;
   }
+}
+footer .social__list .social__item a i:hover {
+  transform: scale(1.2);
 }
 @media (min-width: 1280px) {
   footer .social__list .facebook {

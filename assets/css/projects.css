@@ -52,21 +52,16 @@ header .logo a {
 }
 header .logo span {
   align-self: center;
+  font-size: 1.3rem;
 }
 @media (min-width: 728px) {
   header .logo a {
     width: 12%;
   }
-  header .logo span {
-    font-size: 1.3rem;
-  }
 }
 @media (min-width: 1280px) {
   header .logo a {
     width: 5%;
-  }
-  header .logo span {
-    font-size: 1.5rem;
   }
 }
 
@@ -201,11 +196,11 @@ nav .hamburger {
 .project__container {
   text-align: left;
   margin-bottom: 20px;
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 .project__container img {
   display: block;
-  margin: auto;
+  margin: 20px auto;
   max-width: 90%;
   border-radius: 10px;
   background: linear-gradient(145deg, #ffffff, #e6e6e6);
@@ -224,6 +219,16 @@ nav .hamburger {
   color: white;
   padding: 10px;
 }
+@media (min-width: 728px) {
+  .project__container .project__heading {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1280px) {
+  .project__container {
+    font-size: 0.7rem;
+  }
+}
 
 .project__star {
   color: #202850;
@@ -231,7 +236,27 @@ nav .hamburger {
 }
 .project__star dt {
   font-size: 1.3rem;
-  font-weight: bold;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+@media (min-width: 728px) {
+  .project__star dt {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .project__star dt {
+    font-size: 1.1rem;
+  }
+}
+.project__star dd {
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+@media (min-width: 728px) {
+  .project__star dd {
+    font-size: 0.8rem;
+  }
 }
 
 .project__buttons {
@@ -239,10 +264,21 @@ nav .hamburger {
 }
 .project__buttons .live__button,
 .project__buttons .code__button {
+  display: inline-block;
   padding: 10px 20px;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #ffffff, #e6e6e6);
-  box-shadow: 7px 7px 14px #b0b0b0, -7px -7px 14px #ffffff;
+  border-radius: 30px;
+  border: 2px solid;
+}
+@media (min-width: 728px) {
+  .project__buttons .live__button,
+.project__buttons .code__button {
+    font-size: 0.8rem;
+  }
+}
+.project__buttons .live__button:hover,
+.project__buttons .code__button:hover {
+  background-color: #202850;
+  color: white;
 }
 .project__buttons .live__button {
   margin-right: 20px;
